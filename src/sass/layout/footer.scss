@@ -1,0 +1,57 @@
+/* footer */
+.footer {
+  height: 62px;
+  border-top: $footer-border-color 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    font-size: 14px;
+    color: $dark-grey-color;
+    @extend %montserrat-400;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $pink-color;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* form  */
+input[type='text'] {
+  height: 40px;
+  width: 230px;
+  padding-left: 10px;
+  border: 1px solid $input-border-color;
+  font-size: 15px;
+  line-height: 24px;
+  color: $dark-grey-color;
+  @extend %roboto-300;
+}
+
+input::placeholder {
+  font-size: 15px;
+  line-height: 24px;
+  color: $placeholder-color;
+  @extend %roboto-300i;
+}
+
+input[type='submit'] {
+  width: 150px;
+  height: 40px;
+  background-color: $turquoise-color;
+  font-size: 14px;
+  color: $white-color;
+  @extend %montserrat-700;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}

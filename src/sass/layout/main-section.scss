@@ -1,0 +1,205 @@
+.main {
+  padding-top: 45px;
+}
+
+.section__title--cursive {
+  @extend %kaushan-400;
+  display: block;
+  font-size: 24px;
+  color: $dark-grey-color;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.section__title--non-serif {
+  display: block;
+  font-size: 30px;
+  @extend %montserrat-700;
+  color: $dark-grey-color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section__title::after {
+  margin: 36px auto 54px;
+  display: block;
+  content: '';
+  width: 60px;
+  height: 3px;
+  background-color: $pink-color;
+}
+
+/* services */
+.section__services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-service {
+  display: flex;
+  width: 383px;
+  justify-content: space-between;
+  margin-bottom: 88px;
+  margin-top: 10px;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 74px;
+    height: 74px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-top: 14px;
+  }
+  
+  &__text {
+    width: 300px;
+  }
+
+  &__name {
+    text-transform: uppercase;
+    @extend %montserrat-700;
+    font-size: 14px;
+    color: $dark-grey-color;
+    margin-bottom: 12px;
+  }
+
+  &__description {
+    @extend %roboto-400;
+    font-size: 15px;
+    line-height: 22px;
+    color: $light-grey-color;
+  }
+}
+
+.alarm::before {
+  background-image: url('../../images/alarm.svg');
+}
+
+.line-graph::before {
+  background-image: url('../../images/line-graph.svg');
+}
+
+.computer::before {
+  background-image: url('../../images/computer.svg');
+}
+
+.book::before {
+  background-image: url('../../images/book.svg');
+}
+
+.home::before {
+  background-image: url('../../images/home.svg');
+}
+
+.image::before {
+  background-image: url('../../images/image.svg');
+}
+
+/* team */
+.section__text {
+  display: block;
+  width: 950px;
+  font-size: 15px;
+  color: $light-grey-color;
+  @extend %roboto-400;
+  text-align: center;
+  margin: 0 auto 90px;
+}
+
+.section-team {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.card-team {
+  &__pic {
+    position: relative;
+    margin-bottom: 22px;
+    width: 380px;
+    height: 470px;
+
+    &__img {
+      width: 380px;
+      height: 470px;
+      height: 100%;
+    }
+
+    &:hover {
+      transition-property: all;
+      transform: translate(-10px, -10px);
+      transition-duration: 0.25s;
+    }
+
+    &:hover .card-team__overlay {
+      display: flex;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: $gradient-color;
+      width: 380px;
+      height: 470px;
+      box-shadow: $turquoise-color 10px 10px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__overlay {
+    display: none;
+  }
+
+  &__name {
+    font-size: 14px;
+    line-height: 28px;
+    color: $dark-grey-color;
+    @extend %montserrat-700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__job {
+    font-size: 15px;
+    color: $light-grey-color;
+    @extend %roboto-300i;
+    text-align: center;
+    line-height: 24px;
+  }
+}
+
+/* social icons */
+.soc-icons {
+  display: flex;
+  width: 223px;
+  height: 55px;
+  justify-content: space-between;
+
+  &__link {
+    display: flex;
+    width: 55px;
+    height: 55px;
+    background-color: $yellow-color;
+    opacity: 100%;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: $pink-color;
+      transition-property: all;
+      transition-duration: 0.25s;
+    }
+
+    &:hover .soc-icons__svg {
+      fill: $white-color;
+    }
+  }
+     
+  &__svg {
+    height: 26px;
+    fill: $pink-color;
+  }
+  
+  
+}

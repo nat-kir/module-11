@@ -1,0 +1,116 @@
+.container {
+  width: 100%;
+  background: url('../../images/header.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container-gradient {
+  background: $gradient-color;
+  padding-bottom: 230px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-1 {
+  display: flex;
+  height: 58px;
+  justify-content: space-between;
+  align-items: flex-end;
+  @extend %montserrat-700;
+}
+
+/* logo  */
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0;
+
+  &__link {
+    text-decoration: none;
+    color: $white-color;
+  }
+}
+
+/* menu  */
+.nav {
+  &__list {
+    width: 618px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    color: $white-color;
+    vertical-align: bottom;
+
+    &:hover {
+      color: $yellow-color;
+      border-bottom: 3px solid $yellow-color;
+      padding-bottom: 12px;
+      transition-property: all;
+      transition-duration: 0.25s;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    fill: $white-color;
+
+    &:hover {
+      fill: $yellow-color;
+    }
+  }
+}
+
+.header-1 {
+  margin-bottom: 166px;
+}
+
+/* header2 */
+.slogan-title {
+  @extend %kaushan-400;
+  font-size: 72px;
+  color: $white-color;
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.welcome-title {
+  font-size: 150px;
+  line-height: 140px;
+  color: $white-color;
+  @extend %montserrat-700;
+  text-align: center;
+  text-transform: uppercase;
+  width: 821px;
+  margin: 0 auto 110px;
+}
+
+.button-header {
+  width: 160px;
+  height: 40px;
+  border: 3px solid $white-color;
+  cursor: pointer;
+  margin: 0 auto;
+  padding-left: 29px;
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $white-color;
+    @extend %montserrat-700;
+    line-height: 34px;
+  }
+}
