@@ -74,27 +74,27 @@
 }
 
 .alarm::before {
-  background-image: url('../../images/alarm.svg');
+  background-image: url('../images/alarm.svg');
 }
 
 .line-graph::before {
-  background-image: url('../../images/line-graph.svg');
+  background-image: url('../images/line-graph.svg');
 }
 
 .computer::before {
-  background-image: url('../../images/computer.svg');
+  background-image: url('../images/computer.svg');
 }
 
 .book::before {
-  background-image: url('../../images/book.svg');
+  background-image: url('../images/book.svg');
 }
 
 .home::before {
-  background-image: url('../../images/home.svg');
+  background-image: url('../images/home.svg');
 }
 
 .image::before {
-  background-image: url('../../images/image.svg');
+  background-image: url('../images/image.svg');
 }
 
 /* team */
@@ -115,6 +115,10 @@
 }
 
 .card-team {
+  &__overlay {
+    display: none;
+  }
+  
   &__pic {
     position: relative;
     margin-bottom: 22px;
@@ -146,11 +150,7 @@
       align-items: center;
     }
   }
-
-  &__overlay {
-    display: none;
-  }
-
+  
   &__name {
     font-size: 14px;
     line-height: 28px;
