@@ -137,18 +137,7 @@
       transition-duration: 0.25s;
     }
 
-    &:hover .card-team__overlay {
-      display: flex;
-      position: absolute;
-      left: 0;
-      top: 0;
-      background: $gradient-color;
-      width: 380px;
-      height: 470px;
-      box-shadow: $turquoise-color 10px 10px;
-      justify-content: center;
-      align-items: center;
-    }
+    
   }
   
   &__name {
@@ -167,6 +156,19 @@
     text-align: center;
     line-height: 24px;
   }
+}
+
+.card-team__pic:hover .card-team__overlay {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: $gradient-color;
+  width: 380px;
+  height: 470px;
+  box-shadow: $turquoise-color 10px 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* social icons */
